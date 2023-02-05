@@ -1,0 +1,214 @@
+.section_one {
+    background-image: url(../img/ervthree.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding: 100px 0;
+}
+.container_one {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding: 0 10px;
+    @media screen and (min-width: 480px) {
+                padding: 0 20px;
+        }
+    
+        @media screen and (min-width: 768px) {
+                padding: 0 25px;
+        }
+    
+        @media screen and (min-width: 1024px) {
+                padding: 0 50px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+                padding: 0 50px;
+        }
+}
+
+.explore {
+    width: 90%;
+    max-width: 701px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.one {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47.78px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: center;
+    max-width: 686px;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #3D3E48;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 9px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+
+    >div {
+        width: 100%;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .tag_svg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .btn {
+        min-width: 170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        background: #43B97F;
+        border-radius: 10px;
+        color: #fff;
+        &:active {
+        transform: scale(0.99);
+        }
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+    .line {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 2;
+        gap: 10px;
+    }
+
+    .person {
+        background: #43B97F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 10px;
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .tag_svg {
+        min-width: 175px;
+    }
+
+    .stripe {
+        min-width: 100px;
+    }
+
+    .person {
+        background: none;
+        border-radius: 0;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 780px;
+        gap: 80px;
+    }
+
+    .person {
+        padding-right: 20px;
+        width: 100px;
+    }
+
+}

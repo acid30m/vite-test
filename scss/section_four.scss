@@ -1,0 +1,94 @@
+.section_four {
+    max-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.65px;
+    line-height: 120%;
+    color: #3D3E48;
+    padding: 0 0 100px;
+
+    #testimonial {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 180%;
+        color: #295943;
+    }
+    .header_user {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+    }
+}
+
+.six_box_users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 40px;
+    }
+    @media screen and (min-width: 1024px) {
+        gap: 50px 20px;
+    }
+    @media screen and (min-width: 1280px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.box_rev {
+    max-width: 360px;
+    height: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    @media screen and (min-width: 1024px) {
+            gap: 40px;
+        }
+ }
+ .box_rev_back {
+    color: #3D3E48;
+    padding: 5px;
+ }
+ .box_rev_back:hover {
+    background: #43B97F;
+    color: #fff;
+ }
+
+.box_rev_user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.04px;
+    line-height: 120%;
+    @media screen and (min-width: 1024px) {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}

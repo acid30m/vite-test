@@ -1,0 +1,155 @@
+.test {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px 10px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: center;
+    @media screen and (min-width: 480px) {
+            padding: 20px 20px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+            padding: 20px 25px 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+            padding: 20px 50px 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+            padding: 20px 50px 0;
+
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+}
+
+.topnav #myLinks {
+    display: none;
+    background-color: #43b980d7;
+}
+.topnav #myLinks > a:hover{
+   color: #43b980d7;
+    background-color: #fff;
+}
+
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.topnav a.icon {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+   height: 40px;
+}
+
+.faka {
+    width: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.duet {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    gap: 10px;
+    height: 100%;
+}
+.trvl {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.triple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 180%;
+    color: #ffff;
+}
+.id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.poland {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+
+    >:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    >:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.strila {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .galka_svg {
+        width: 11px;
+        height: 6px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .test {
+        display: none;
+    }
+}
